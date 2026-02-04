@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Doc Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Foydalanuvchi nomi" required><br>
+        <input type="password" name="password" placeholder="Parol" required><br>
+        <button type="submit">Kir</button>
+    </form>
+
+    <h2>Dashboard</h2>
+    <form method="POST">
+        <select name="file_type">
+            <option value="word">Word</option>
+            <option value="excel">Excel</option>
+        </select><br>
+        <input type="text" name="obj_name" placeholder="Obyekt nomi" required><br>
+        <input type="text" name="task" placeholder="Topshiriq matni" required><br>
+        <input type="text" name="date" placeholder="Sana" required><br>
+        <button type="submit">Fayl yaratish</button>
+    </form>
+</body>
+if __name__ == "__name__":
+app.run()
+</html>
